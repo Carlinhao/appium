@@ -12,14 +12,14 @@ public class AppiumStart {
     private static AndroidDriver<MobileElement> driver;
 
 
-    public static AndroidDriver androidDriver() throws MalformedURLException {
+    public static AndroidDriver<MobileElement> androidDriver() throws MalformedURLException {
         DesiredCapabilities caps = new DesiredCapabilities();
-        caps.setCapability("platformVersion", "Android");
+        caps.setCapability("platformVersion", "9");
+        caps.setCapability("automationName", "UiAutomator2");
         caps.setCapability("deviceName", "Android Emulator");
         caps.setCapability("platformName", "Android");
         caps.setCapability("noReset", "false");
-        caps.setCapability("app", "");
-        caps.setCapability("", "");
+        caps.setCapability("app", System.getProperty("user.dir")+"\\src\\test\\resources\\app\\parler-release.apk");
         driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"),caps);
         return driver;
     }
