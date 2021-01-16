@@ -219,7 +219,9 @@ fabric.properties
 ### Intellij Patch ###
 # Comment Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
 
-# *.iml
+
+*.apk
+*.apk.idsig
 # modules.xml
 .idea/misc.xml
 # *.ipr
@@ -267,3 +269,5 @@ fabric.properties
 *.zip
 *.tar.gz
 *.rar
+/target/
+*.iml
