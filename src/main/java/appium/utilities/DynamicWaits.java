@@ -9,7 +9,7 @@ public class DynamicWaits {
     private static WebDriverWait waitElement;
 
     public static WebDriverWait waitElement() throws MalformedURLException {
-        waitElement = new WebDriverWait(AppiumStart.androidDriver(), 15);
+        waitElement = new WebDriverWait(AppiumStart.androidDriver(), 25);
         return waitElement;
     }
 }
