@@ -25,4 +25,10 @@ public class ActionsHelpers {
 		new TouchActions(_driver)
 		.doubleTap(element).perform();
 	}
+	
+	public void scroolElement(MobileElement element) {
+		new TouchActions(_driver)
+		.scroll(element, 10, 100)
+		.perform();;
+	}
 }
