@@ -2,6 +2,9 @@ package appium.utilities;
 
 public class ElementsConfiguration {
 	
+	// Calculator
+	public static final String btn_Calculator = "calculator_button";
+	
 	// Actions
 	public static final String btn_Point = "dec_point";
 	public static final String btn_Del = "del";
