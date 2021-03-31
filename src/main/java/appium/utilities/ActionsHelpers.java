@@ -20,4 +20,9 @@ public class ActionsHelpers {
 		new TouchActions(_driver)
 		.singleTap(element).perform();
 	}
+	
+	public void doubleTapElement(MobileElement element) {
+		new TouchActions(_driver)
+		.doubleTap(element).perform();
+	}
 }
