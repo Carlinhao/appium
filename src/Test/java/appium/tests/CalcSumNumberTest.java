@@ -9,11 +9,11 @@ import com.aventstack.extentreports.Status;
 import appium.pages.SumPage;
 import appium.utilities.ExtentReportConfiguration;
 
-public class LoginTest extends BaseTest {
+public class CalcSumNumberTest extends BaseTest {
 
 	private SumPage _sumPatge;
 	
-	public LoginTest() throws MalformedURLException {
+	public CalcSumNumberTest() throws MalformedURLException {
 		_sumPatge = new SumPage();
 	}
 	
