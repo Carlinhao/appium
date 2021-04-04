@@ -9,7 +9,11 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 public class ExtentReportConfiguration {
     private static ExtentReports extent;
     private static ExtentSparkReporter spark;
-        
+    private static ReadFileProperties _readFile;
+    
+    public ExtentReportConfiguration() {
+    	_readFile = new ReadFileProperties();
+    }
     public static ExtentReports getInstance() {
     	if (extent == null) {
     		extent = new ExtentReports();
@@ -19,8 +23,9 @@ public class ExtentReportConfiguration {
     }
     
     private static ExtentSparkReporter getSpark() {
+    	
     	spark = new ExtentSparkReporter("target/spark.html");
-    	final File CONF = new File(System.getProperty("user.dir")+"\\src\\test\\resources\\jsons\\spark-config.json");
+    	final File CONF = new File(_readFile.extentJsonPath());
     	
     	try {
 			spark.loadJSONConfig(CONF);

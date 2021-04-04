@@ -18,7 +18,7 @@ public class CalcSumNumberTest extends BaseTest {
 	}
 	
 	@Test
-	public void startParler() {
+	public void startApp() {
 		_sumPatge.getSumResult();		
 		
 		ExtentReportConfiguration.getInstance()

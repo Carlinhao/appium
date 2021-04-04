@@ -23,9 +23,16 @@ public class ReadFileProperties {
         if(urlServer!= null) return urlServer;
         else throw new RuntimeException("Path chrome driver not found");
     }
+    
     public String appiumPort(){
         String port = properties.getProperty("appium.port");
         if(port!= null) return port;
         else throw new RuntimeException("Path chrome driver not found");
+    }
+    
+    public String extentJsonPath() {
+    	String jsonPath = properties.getProperty("spark.json");
+        if(jsonPath!= null) return jsonPath;
+        else throw new RuntimeException("Path jsonExtent not found");
     }
 }
