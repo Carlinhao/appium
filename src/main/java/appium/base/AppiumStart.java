@@ -6,8 +6,6 @@ import io.appium.java_client.android.AndroidElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import appium.utilities.ReadFileProperties;
-
-import java.net.MalformedURLException;
 import java.net.URL;
 
 public class AppiumStart {
